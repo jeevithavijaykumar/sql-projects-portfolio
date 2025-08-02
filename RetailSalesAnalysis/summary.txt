@@ -1,0 +1,22 @@
+Project Title: Retail Sales Analysis
+
+Overview:
+This project focuses on analyzing retail sales data using SQL. The goal is to clean, explore, and analyze sales performance across customer demographics and product categories.
+
+Key Steps Performed:
+
+ - Created a SQL database and defined a table schema for retail_sales with columns like transactions_id, sale_date, customer_id,     category, quantity, price_per_unit, and total_sale.
+
+ - Inserted and previewed sample records.
+
+ - Counted total number of transactions to understand dataset size.
+
+ - Performed initial data cleaning operations to ensure quality analysis.
+
+Files Included:
+
+ 1. Retail Sales_utf .csv: Contains raw retail sales data used for the project.
+
+2. retailSalesAnalysis.sql: Contains all SQL queries used for database setup, cleaning, and analysis.
+
+3. summary.txt: This project summary file.
