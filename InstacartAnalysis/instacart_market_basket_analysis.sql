@@ -58,6 +58,81 @@ CREATE TABLE order_products (
 );
 
 
+
+------------------------------------------------------
+-- Data Cleaning
+------------------------------------------------------
+
+-- Orders table
+SELECT COUNT(*) AS null_orders FROM orders
+WHERE order_id IS NULL OR user_id IS NULL OR eval_set IS NULL 
+  OR order_number IS NULL OR order_dow IS NULL 
+  OR order_hour_of_day IS NULL;
+
+-- Products table
+SELECT COUNT(*) AS null_products FROM products
+WHERE product_id IS NULL OR product_name IS NULL 
+  OR aisle_id IS NULL OR department_id IS NULL;
+
+-- Aisles table
+SELECT COUNT(*) AS null_aisles FROM aisles
+WHERE aisle_id IS NULL OR aisle IS NULL;
+
+-- Departments table
+SELECT COUNT(*) AS null_departments FROM departments
+WHERE department_id IS NULL OR department IS NULL;
+
+-- Order_Products table
+SELECT COUNT(*) AS null_order_products FROM order_products
+WHERE order_id IS NULL OR product_id IS NULL 
+  OR add_to_cart_order IS NULL OR reordered IS NULL;
+
+
+--  Delete rows with NULLs (if cleaning is needed)
+
+-- Remove NULLs from orders
+DELETE FROM orders
+WHERE order_id IS NULL OR user_id IS NULL OR eval_set IS NULL 
+  OR order_number IS NULL OR order_dow IS NULL 
+  OR order_hour_of_day IS NULL;
+
+-- Remove NULLs from products
+DELETE FROM products
+WHERE product_id IS NULL OR product_name IS NULL 
+  OR aisle_id IS NULL OR department_id IS NULL;
+
+-- Remove NULLs from aisles
+DELETE FROM aisles
+WHERE aisle_id IS NULL OR aisle IS NULL;
+
+-- Remove NULLs from departments
+DELETE FROM departments
+WHERE department_id IS NULL OR department IS NULL;
+
+-- Remove NULLs from order_products
+DELETE FROM order_products
+WHERE order_id IS NULL OR product_id IS NULL 
+  OR add_to_cart_order IS NULL OR reordered IS NULL;
+
+
+-- Duplicate orders
+SELECT order_id, COUNT(*) 
+FROM orders 
+GROUP BY order_id 
+HAVING COUNT(*) > 1;
+
+
+-- Invalid order hour (should be 0–23)
+SELECT * FROM orders
+WHERE order_hour_of_day < 0 OR order_hour_of_day > 23;
+
+
+-- Invalid reordered flag (should be 0 or 1)
+SELECT * FROM order_products
+WHERE reordered NOT IN (0, 1);
+
+
+
 ---------------------------------------------------------
 --  Business Insights
 ---------------------------------------------------------
