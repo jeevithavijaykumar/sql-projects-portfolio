@@ -5,14 +5,12 @@
 -- Create database
 CREATE DATABASE instacart_market_basket;
 
-
 -- Drop existing tables if they exist
 DROP TABLE IF EXISTS order_products;
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS aisles;
 DROP TABLE IF EXISTS departments;
-
 
 -- Create departments table
 - Create departments table
@@ -56,7 +54,6 @@ CREATE TABLE order_products (
     FOREIGN KEY (order_id) REFERENCES orders(order_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
-
 
 
 ------------------------------------------------------
@@ -130,7 +127,6 @@ WHERE order_hour_of_day < 0 OR order_hour_of_day > 23;
 -- Invalid reordered flag (should be 0 or 1)
 SELECT * FROM order_products
 WHERE reordered NOT IN (0, 1);
-
 
 
 ---------------------------------------------------------
