@@ -1,0 +1,40 @@
+------------------------------------------------------
+IMDb Movies and Reviews Analysis - Project README
+------------------------------------------------------
+
+Project Overview:
+------------------
+This project involves cleaning, storing, and analyzing data from the IMDb Movies and Reviews dataset. 
+The goal is to gain insights into movie ratings, review patterns, and genre trends by designing a normalized database 
+schema, importing raw data, and running SQL queries for business analysis.
+
+Files Included:
+----------------
+1. imdb_movies_reviews_analysis.sql
+   - SQL script to create and clean tables, insert data, add indexes, and run queries.
+
+2. Datasets (imported via pgAdmin4):S
+   - movies.csv (IMDb ID, title, rating, genre, year)
+   - reviews.csv (IMDb ID, review title, rating, review text)
+   
+
+Business Insights:
+-------------------
+
+• Top Reviewed Movies  
+  - Identified the most frequently reviewed movies by users.
+
+• Top Rated Movies (Based on User Reviews)  
+  - Highlighted high-rated movies using the average user review rating.
+
+• Genre Popularity and Trends  
+  - Ranked genres by number of movies and user ratings; identified genre trends.
+
+• Review Volume Over Time  
+  - Tracked review activity and movie production across different years.
+
+• Sentiment Summary 
+  - Categorized user reviews as Positive, Neutral, or Negative based on rating score thresholds.
+
+• Genre-wise Trends Over the Years  
+  - Evaluated how average ratings for each genre evolved annually.
