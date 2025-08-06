@@ -5,9 +5,12 @@ IBM HR Analytics Employee Attrition & Performance
 
 Project Overview:
 -------------------
-This project analyzes employee attrition and performance factors using IBM HR Analytics data. The data is modeled in a relational database with multiple normalized tables organizing employee demographics, job details, performance metrics, and attrition information separately.
+This project analyzes employee attrition and performance factors using IBM HR Analytics data. 
+The data is modeled in a relational database with multiple normalized tables organizing employee demographics, job details, performance metrics, and attrition information separately.
 
-The SQL script provides end-to-end functionality from importing data to performing key analyses. It enables HR teams and management to identify trends and factors influencing employee attrition. The analyses focus on attrition rates across departments, job roles, overtime, salary increases, gender and work-life balance, providing valuable insights for workforce planning and decision-making.
+The SQL script provides end-to-end functionality from importing data to performing key analyses. 
+It enables HR teams and management to identify trends and factors influencing employee attrition.
+The analyses focus on attrition rates across departments, job roles, overtime, salary increases, gender and work-life balance, providing valuable insights for workforce planning and decision-making.
 
 
 Files Included:
