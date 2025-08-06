@@ -1,12 +1,18 @@
 # sql-projects-portfolio
 
-This repository contains a collection of SQL projects demonstrating database design, data transformation, and analytical querying skills. 
-These projects showcase the ability to convert raw datasets into structured relational databases and extract meaningful business insights through advanced SQL.
+This repository contains a collection of SQL projects demonstrating database design, data transformation, and analytical querying. 
+Each project demonstrates the ability to turn raw data into structured, relational formats and draw meaningful business insights using advanced SQL techniques.
+
+-----
 
 ## Technologies and Tools
-- PostgreSQL for database management and querying  
-- SQL for data manipulation and analysis  
+- **PostgreSQL** - For database management and querying  
+- **SQL** - For data manipulation and analysis
+- **Microsoft Excel** – For initial data exploration, formatting, and summary reporting
+
+-----
 
 ## Author
 **Jeevitha Vijayakumar**  
-[LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijayakumar/)
+[LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijayakumar/) 
+[GitHub](https://github.com/jeevithavijaykumar)
