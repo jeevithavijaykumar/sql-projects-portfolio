@@ -9,4 +9,4 @@ These projects showcase the ability to convert raw datasets into structured rela
 
 ## Author
 **Jeevitha Vijayakumar**  
-[LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijaykumar)
+[LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijayakumar/)
