@@ -1,0 +1,25 @@
+IBM HR Analytics Employee Attrition & Performance
+
+
+Project Overview:
+This project analyzes employee attrition and performance factors using IBM HR Analytics data. The data is modeled in a relational database with multiple normalized tables organizing employee demographics, job details, performance metrics, and attrition information separately.
+
+The SQL script provides end-to-end functionality from importing data to performing key analyses. It enables HR teams and management to identify trends and factors influencing employee attrition. The analyses focus on attrition rates across departments, job roles, overtime, salary increases, gender and work-life balance, providing valuable insights for workforce planning and decision-making.
+
+
+Files Included:
+
+1. ibm_hr_analytics.sql
+     • Creates the'IBM_hr_analytics' database.
+     • Defines normalized tables: hr_raw, employees, employment_details, performance, attrition_status.
+     • Inserts and organizes raw data into these tables with appropriate relationships.
+     • Performs data quality checks (null values, duplicates).
+     • Runs exploratory queries to analyze attrition patterns and their drivers.
+
+2. IBM_HR_Analytics.csv
+     • Raw dataset file used for data ingestion.
+
+
+Author:
+Jeevitha Vijaykumar
+LinkedIn: https://www.linkedin.com/in/jeevitha-vijayakumar
