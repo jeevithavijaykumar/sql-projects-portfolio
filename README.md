@@ -7,7 +7,7 @@ Each project demonstrates the ability to turn raw data into structured, relation
 
 ## Technologies and Tools
 - **PostgreSQL** - For database management and querying  
-- **SQL** - For data manipulation and analysis
+- **SQL** - For data extraction, manipulation, and analysis
 - **Microsoft Excel** – For initial data exploration, formatting, and summary reporting
 
 -----
