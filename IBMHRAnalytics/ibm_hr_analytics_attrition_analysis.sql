@@ -14,6 +14,7 @@ DROP TABLE IF EXISTS performance;
 DROP TABLE IF EXISTS attrition_status;
 
 
+-- Create table to store raw HR dataset with comprehensive employee details before normalization
 CREATE TABLE hr_raw (
     age INT,
     attrition BOOLEAN,
@@ -165,7 +166,7 @@ FROM hr_raw r
 JOIN employees e ON r.employee_number = e.employee_number;
 
 
--- Insert data into attrition status
+-- Insert data into attrition status table
 INSERT INTO attrition_status (
     employee_id,
     attrition,
