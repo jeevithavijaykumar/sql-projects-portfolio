@@ -1,0 +1,26 @@
+------------------------------------------------------
+Video Game Sales Analysis
+------------------------------------------------------
+
+Project Overview:
+-------------------
+This project analyzes video game sales data. The data is modeled into a relational PostgreSQL database with normalized tables representing platforms, publishers, games, and regional sales.  
+
+The SQL script implements an end-to-end pipeline, from staging and cleaning raw data to building a normalized schema and performing  insightful analytics. Business insights include identifying top-selling games globally, sales by region, trends in critic and user ratings, genre popularity, and publisher performance.  
+
+
+Files Included:
+-----------------
+1. video_game_sales_etl.sql  
+   • Creates the `video_game_sales` database.  
+   • Defines staging and normalized tables: staging_vgsales, platforms, publishers, games, sales.  
+   • Cleans and transforms raw data within SQL for accurate analysis.  
+   • Loads cleaned data into normalized tables with foreign keys.  
+   • Contains business insight queries highlighting sales trends, ratings, and publisher performance.
+
+2. Video_Game_Sales.csv  
+   • Raw dataset file for data ingestion (source: Kaggle).
+
+Author:  
+Jeevitha Vijayakumar  
+LinkedIn: https://www.linkedin.com/in/jeevitha-vijayakumar  
