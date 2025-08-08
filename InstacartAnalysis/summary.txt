@@ -1,13 +1,18 @@
+---------------------------------------------------------
 Instacart Market Basket Analysis with PostgreSQL
+---------------------------------------------------------
 
 Project Objective:
+--------------------
 Analyze the Instacart online grocery shopping dataset to understand customer purchasing behaviors, product popularity, reorder tendencies, and overall shopping trends.  This involves designing a normalized relational database schema, importing and organizing raw data, and writing  SQL queries to extract actionable business insights that can guide marketing and inventory decisions.
 
 Files Included:
+-----------------
 - instacart_market_basket_analysis.sql - SQL script to create tables and perform analysis queries
 - Dataset CSV files for orders, departments, products, aisles, and order_products tables
 
 Key Insights from Analysis:
+-------------------------------
 - Overview of total orders, unique users, and products
 - Peak ordering times by hour and day of the week
 - Top products by frequency and reorder rate
@@ -18,5 +23,4 @@ Key Insights from Analysis:
 
 Author:
 Jeevitha Vijayakumar
-LinkedIn: https://www.linkedin.com/in/jeevitha-vijayakumar
 
