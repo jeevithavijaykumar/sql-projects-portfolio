@@ -22,5 +22,4 @@ Files Included:
    • Raw dataset file for data ingestion (source: Kaggle).
 
 Author:  
-Jeevitha Vijayakumar  
-LinkedIn: https://www.linkedin.com/in/jeevitha-vijayakumar  
+Jeevitha Vijayakumar 
