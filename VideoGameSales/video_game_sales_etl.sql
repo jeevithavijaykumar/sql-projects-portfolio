@@ -4,15 +4,14 @@
 
 CREATE DATABASE video_game_sales;
 
-
--- drop table if exists
+-- Drop table if exists
 DROP TABLE IF EXISTS staging_vgsales;
 DROP TABLE IF EXISTS platforms;
 DROP TABLE IF EXISTS publishers ;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS sales;
 
--- staging table for raw data
+-- Staging table for raw data
 CREATE TABLE staging_vgsales (
     Name VARCHAR,
     Platform VARCHAR,
@@ -42,12 +41,12 @@ UPDATE staging_vgsales
 SET User_Score = NULL
 WHERE LOWER(User_Score) = 'tbd';
 
--- invalid years
+-- Invalid years
 UPDATE staging_vgsales
 SET Year_of_Release = NULL
 WHERE Year_of_Release !~ '^\d{4}$';
 
--- invalid critic scores
+-- Invalid critic scores
 UPDATE staging_vgsales
 SET Critic_Score = NULL
 WHERE Critic_Score !~ '^\d+$';
@@ -96,7 +95,6 @@ CREATE TABLE sales (
     global_sales NUMERIC(6,2)
 );
 
-
 -- Insert cleaned data into platforms table
 INSERT INTO platforms (platform_name)
 SELECT DISTINCT Platform
@@ -105,8 +103,7 @@ WHERE Platform IS NOT NULL AND Platform <> ''
 AND Platform NOT IN (
       SELECT platform_name FROM platforms) ;
 
-
---Insert cleaned data into publishers table
+-- Insert cleaned data into publishers table
 INSERT INTO publishers (publisher_name)
 SELECT DISTINCT Publisher
 FROM staging_vgsales
@@ -114,8 +111,7 @@ WHERE Publisher IS NOT NULL AND Publisher <> ''
 AND Publisher NOT IN (
       SELECT publisher_name FROM publishers);
 
-
---Insert cleaned data into games table
+-- Insert cleaned data into games table
 INSERT INTO games (name, platform_id, year_of_release, genre, publisher_id,
                    critic_score, critic_count, user_score, user_count)
 SELECT
@@ -139,7 +135,7 @@ JOIN platforms p ON sv.Platform = p.platform_name
 JOIN publishers pub ON sv.Publisher = pub.publisher_name
 WHERE sv.Name IS NOT NULL;
 
-
+-- Insert cleaned data into sales table
 INSERT INTO sales (game_id, na_sales, eu_sales, jp_sales, other_sales, global_sales)
 SELECT
     g.game_id,
@@ -157,7 +153,6 @@ JOIN games g
    AND g.publisher_id = pub.publisher_id;
 
 
-
 ----------------------------------------------------------------
 -- Business Insights
 ----------------------------------------------------------------
@@ -171,14 +166,12 @@ JOIN publishers pub ON g.publisher_id = pub.publisher_id
 ORDER BY s.global_sales DESC
 LIMIT 10;
 
-
 -- Average critic score by genre
 SELECT genre, AVG(critic_score) AS avg_critic_score
 FROM games
 WHERE critic_score IS NOT NULL
 GROUP BY genre
 ORDER BY avg_critic_score DESC;
-
 
 -- Top publishers by North America sales
 SELECT pub.publisher_name, SUM(s.na_sales) AS total_na_sales
