@@ -1,7 +1,7 @@
 # sql-projects-portfolio
 
 This repository contains a collection of SQL projects demonstrating database design, data transformation, and analytical querying. 
-Each project demonstrates the ability to turn raw data into structured, relational formats and draw meaningful business insights using advanced SQL techniques.
+Each project demonstrates the ability to turn raw data into structured, relational formats and draw business insights using advanced SQL techniques.
 
 -----
 
@@ -15,4 +15,3 @@ Each project demonstrates the ability to turn raw data into structured, relation
 ## Author
 **Jeevitha Vijayakumar**  
 [LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijayakumar/) 
-[GitHub](https://github.com/jeevithavijaykumar)
