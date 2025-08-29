@@ -13,7 +13,6 @@ Each project demonstrates the ability to turn raw data into structured, relation
 -----
 
 
-
 ## Author
 **Jeevitha Vijayakumar**  
 [LinkedIn Profile](https://www.linkedin.com/in/jeevitha-vijayakumar/) 
