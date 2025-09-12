@@ -10,6 +10,7 @@ Each project demonstrates the ability to turn raw data into structured, relation
 - **SQL** - For data extraction, manipulation, and analysis
 - **Microsoft Excel** – For initial data exploration, formatting, and summary reporting
 
+
 ------
 
 
