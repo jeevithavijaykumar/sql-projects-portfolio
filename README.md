@@ -1,6 +1,7 @@
 # sql-projects-portfolio
 
 This repository contains a collection of SQL projects demonstrating database design, data transformation, and analytical querying. 
+
 ------
 
 ## Technologies and Tools
