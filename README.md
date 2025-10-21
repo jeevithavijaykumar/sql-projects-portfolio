@@ -9,7 +9,6 @@ This repository contains a collection of SQL projects demonstrating database des
 - **SQL** - For data extraction, manipulation, and analysis
 - **Microsoft Excel** – For initial data exploration, formatting, and summary reporting
 
-
 ------
 
 
