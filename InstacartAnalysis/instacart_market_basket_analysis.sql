@@ -2,6 +2,7 @@
 -- Instacart Market Basket Analysis 
 ------------------------------------------------------
 
+
 -- Create database
 CREATE DATABASE instacart_market_basket;
 
