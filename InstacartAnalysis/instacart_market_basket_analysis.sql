@@ -13,6 +13,7 @@ DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS aisles;
 DROP TABLE IF EXISTS departments;
 
+
 -- Create departments table
 - Create departments table
 CREATE TABLE departments (
